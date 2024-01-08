@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transt/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/root/miniconda3/envs/transt/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/root/code/TransT/pytracking/AR/pytracking/VOT2020_super_only_mask_384_HP/stark_st50_ar.py", line 1, in <module>
+    from pytracking.AR.pytracking.VOT2020_super_only_mask_384_HP.stark_alpha_seg_class import run_vot_exp
+ModuleNotFoundError: No module named 'pytracking'
+Process not alive anymore, unable to retrieve return code

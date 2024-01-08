@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/transt/lib/python3.7/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/root/miniconda3/envs/transt/lib/python3.7/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/root/code/TransT/pytracking/AR/pytracking/VOT2020_super_only_mask_384_HP/stark_st50_ar.py", line 7, in <module>
+    'ARcm_coco_seg_only_mask_384', 0.65, VIS=False)
+  File "/root/code/TransT/pytracking/AR/pytracking/VOT2020_super_only_mask_384_HP/stark_alpha_seg_class.py", line 67, in run_vot_exp
+    refine_model_name=refine_model_name, threshold=threshold)
+  File "/root/code/TransT/pytracking/AR/pytracking/VOT2020_super_only_mask_384_HP/stark_alpha_seg_class.py", line 35, in __init__
+    self.alpha = ARcm_seg(refine_path, input_sz=384)
+  File "/root/code/TransT/pytracking/AR/pytracking/ARcm_seg.py", line 21, in __init__
+    self.refine_network = self.get_network(refine_net_dir)
+  File "/root/code/TransT/pytracking/AR/pytracking/ARcm_seg.py", line 71, in get_network
+    network = load_network(checkpoint_dir)
+  File "/root/code/TransT/pytracking/AR/pytracking/utils/loading.py", line 16, in load_network
+    net, _ = ltr_loading.load_network(path_full, **kwargs)
+  File "/root/code/TransT/pytracking/AR/ltr/admin/loading.py", line 91, in load_network
+    net_fun = getattr(importlib.import_module(net_constr.fun_module), net_constr.fun_name)
+  File "/root/miniconda3/envs/transt/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'ltr.models.AR_seg_mask'
+Process not alive anymore, unable to retrieve return code
